@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="900.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sad.SceneController">
+    <children>
+      <ImageView fitHeight="900.0" fitWidth="600.0" layoutX="-14.0" layoutY="2.0" nodeOrientation="INHERIT" preserveRatio="true">
+         <image>
+            <Image url="@Background.png" />
+         </image>
+      </ImageView>
+        <Text fx:id="timer" fill="#231f20" layoutX="95.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUZZLE GAMES" textAlignment="CENTER" wrappingWidth="382.0">
+            <font>
+                <Font name="Poppins ExtraBold" size="60.0" />
+            </font>
+        </Text>
+        <Button id="easyButton" layoutX="136.0" layoutY="534.0" mnemonicParsing="false" onAction="#switchToFrame1" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #364861; -fx-background-radius: 50;" text="Nonogram" textFill="#eaeef8">
+         <font>
+            <Font name="Poppins SemiBold" size="21.0" />
+         </font></Button>
+      <Button id="hardButton" layoutX="136.0" layoutY="613.0" mnemonicParsing="false" onAction="#switchToFrame2" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #364861; -fx-background-radius: 50;" text="Sudoku" textFill="#eaeef8">
+         <font>
+            <Font name="Poppins SemiBold" size="21.0" />
+         </font>
+      </Button>
+      <Button id="quitButton" layoutX="136.0" layoutY="688.0" mnemonicParsing="false" onAction="#quitFunction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #364861; -fx-background-radius: 50;" text="Quit" textFill="#eaeef8">
+         <font>
+            <Font name="Poppins SemiBold" size="21.0" />
+         </font>
+      </Button>
+
+    </children>
+</Pane>
